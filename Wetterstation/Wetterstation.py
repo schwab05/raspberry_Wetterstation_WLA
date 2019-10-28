@@ -17,8 +17,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(buttonpin, GPIO.IN)
 GPIO.setup(ledpin, GPIO.OUT)
 
-while True:
-    if  GPIO.input(buttonpin) == 1:
+while buttonpin == True:
         GPIO.output(ledpin, GPIO.HIGH)
 
 
